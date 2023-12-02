@@ -7,6 +7,71 @@
 html, body {
   width: 100%;
   height: 100%;
-  font: 16px/1.6 montserrat;
+  font: 1rem/1.6 montserrat;
 }
 
+#main{
+  width: 100%;
+  height: 100%;
+  /* background: url(https://images.unsplash.com/photo-1546414701-81cc6963c67f) 0 100%/cover; */
+  background: url(https://images.pexels.com/photos/1845778/pexels-photo-1845778.jpeg) center/cover;
+}
+#main #nav{
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* background: #caf286; */
+  position: relative;
+  padding: 0 60px;
+}
+
+#main #nav i{
+  height: 44px;
+  width: 44px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* color: #caf286; */
+  font-size: 24px;
+}
+#main #nav h5{
+  height: 44px;
+  width: 44px;
+  border: 2px solid white;
+  color: white;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+}
+
+#main #nav #links{
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  gap: 44px;
+}
+#nav #links a{
+  color: white;
+  text-decoration: none;
+  font-size: 16px;
+  font-weight: 500;
+  position: relative;
+}
+#nav #links #active::before{
+  content: "";
+  height: 3px;
+  width: 40%;
+  background-color: white;
+  position: absolute;
+  top: -5px;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
