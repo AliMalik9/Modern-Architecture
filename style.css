@@ -96,6 +96,7 @@ html, body {
   display: flex;
   align-items: flex-start;
   font-weight: 600;
+  font-size: 12px;
 }
 #text h6 span{
   line-height: 20px;
