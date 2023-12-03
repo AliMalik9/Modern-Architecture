@@ -2,19 +2,19 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  /* color: black !important; */
 }
 
 html, body {
   width: 100%;
   height: 100%;
-  font: 1rem/1.6 montserrat;
+  font: 1rem/1.6 gilroy;
 }
 
 #main{
   width: 100%;
   height: 100%;
-  /* background: url(https://images.unsplash.com/photo-1546414701-81cc6963c67f) 0 100%/cover; */
-  background: url(https://images.pexels.com/photos/1845778/pexels-photo-1845778.jpeg) center/cover;
+  background: url(https://images.pexels.com/photos/6346675/pexels-photo-6346675.jpeg) center/cover;
 }
 #main #nav{
   width: 100%;
@@ -37,8 +37,12 @@ html, body {
   align-items: center;
   /* color: #caf286; */
   font-size: 24px;
+  cursor: pointer;
+  user-select: none;
 }
 #main #nav h5{
+  cursor: pointer;
+  user-select: none;
   height: 44px;
   width: 44px;
   border: 2px solid white;
@@ -74,4 +78,76 @@ html, body {
   top: -5px;
   left: 50%;
   transform: translate(-50%, 0);
+}
+#text{
+  position: absolute;
+  top: 50%;
+  left: 8%;
+  transform: translate(0%, -50%);
+  /* background-color: bisque; */
+  width: 40%;
+  /* height: 300px; */
+  color: white;
+  display: flex;
+  flex-direction: column;
+  gap: 3rem;
+}
+#text h6{
+  display: flex;
+  align-items: flex-start;
+  font-weight: 600;
+}
+#text h6 span{
+  line-height: 20px;
+  font-size: 24px;
+  font-weight: 700;
+}
+#text h1{
+  font-size: 90px;
+  line-height: 1;
+}
+#lineandtext{
+  display: flex;
+  gap: 2.4rem;
+}
+#lineandtext #line{
+  width: 160px;
+  height: 2px;
+  background-color: #ffffff;
+}
+#lineandtext p{
+  width: 56%;
+  margin-top: -10px;
+  line-height: 1.8;
+}
+#bottom{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 70%;
+  height: 20%;
+  background-color: #ffffff;
+  display: flex;
+  gap: 12%;
+  justify-content: center;
+  align-items: center;
+}
+#cube{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: -3.6rem;
+  right: -3.6rem;
+  height: 3.6rem;
+  width: 3.6rem;
+  color: #ffffff;
+  background: #000;
+  font-size: 20px;
+}
+
+#bottom .sec p{
+  opacity: 0.6;
+  font-weight: 600;
+  font-size: 14px;
 }
